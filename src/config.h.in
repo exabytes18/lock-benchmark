@@ -1,0 +1,5 @@
+// cmake will use this template (config.h.in) to generate config.h
+
+#cmakedefine HAVE_PTHREAD_SPINLOCKS
+#cmakedefine HAVE_DARWIN_SPINLOCKS
+#cmakedefine HAVE_UNFAIR_LOCKS
