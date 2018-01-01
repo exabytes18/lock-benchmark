@@ -1,5 +1,7 @@
 #include <iostream>
 #include <pthread.h>
+#include <string.h>
+#include <stdexcept>
 #include "config.h"
 #include "timing_utils.h"
 
@@ -146,7 +148,7 @@ struct thread_state {
 
     int thread_idx;
     int last_iteration;
-    shared_state* shared_state;
+    struct shared_state* shared_state;
 };
 
 
